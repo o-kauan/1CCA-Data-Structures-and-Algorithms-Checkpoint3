@@ -12,10 +12,21 @@ void exibir_menu(){
 }
 
 int main (){
-    printf("OI");
+    int opcao;
+    float saldo = 1000.0;
 
+    do {
+        exibir_menu();
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+        
+        while (getchar() != '\n');
+        if (opcao < 0 || opcao > 3) {
+            printf("Opcao Invalida!\n");
+        }
 
-
+    
+    } while (opcao != 0);
 
     return 0;
 }
