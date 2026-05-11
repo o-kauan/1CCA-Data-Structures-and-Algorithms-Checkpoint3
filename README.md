@@ -28,3 +28,7 @@ O repositório deverá conter:
 - Funcionalidades implementadas;
 - Instruções de compilação e execução;
 - Histórico de commits do grupo durante o desenvolvimento.
+
+
+# Commit
+José Manfrinato fez "Consultar Saldo"
