@@ -25,7 +25,23 @@ int main (){
             printf("Opcao Invalida!\n");
         }
 
-    
+        switch(opcao) {
+        case 1:
+        consularSaldo(saldo);
+        break;
+        case 2:
+        saldo = realizarSaque(saldo);
+        break;
+        case 3:
+        saldo = realizarDeposito(saldo);
+        break;
+        case 0:
+        printf("Saindo...\n");
+        break;
+        default:
+        printf("Opcao Invalida!\n");
+        }
+        
     } while (opcao != 0);
 
     return 0;
