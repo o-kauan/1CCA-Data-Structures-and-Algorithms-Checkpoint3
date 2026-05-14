@@ -24,6 +24,39 @@ void sair(){
     printf("volte sempre!");
     return 0;
 }
+float realizarSaque(float saldo) {
+    float valor;
+    printf("=======================\n");
+    printf("     REALIZAR SAQUE    \n");
+    printf("Digite o valor do saque: ");
+    scanf("%f", &valor);
+ 
+    if (valor > saldo) {
+        printf("Saldo insuficiente!\n");
+    } else if (valor <= 0) {
+        printf("Valor invalido!\n");
+    } else {
+        saldo -= valor;
+        printf("Saque realizado com sucesso!\n");
+    }
+    return saldo;
+}
+ 
+float realizarDeposito(float saldo) {
+    float valor;
+    printf("=======================\n");
+    printf("   REALIZAR DEPOSITO   \n");
+    printf("Digite o valor do deposito: ");
+    scanf("%f", &valor);
+ 
+    if (valor > 0) {
+        saldo += valor;
+        printf("Deposito realizado com sucesso!\n");
+    } else {
+        printf("Valor invalido!\n");
+    }
+    return saldo;
+}
 int main (){
     int opcao;
     float saldo = 1000.0;
