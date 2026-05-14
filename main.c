@@ -19,6 +19,11 @@ void consultar_saldo(float saldo){
     
 }
 
+void sair(){
+    printf("=======================\nSAINDO\n=======================\n");
+    printf("volte sempre!");
+    return 0;
+}
 int main (){
     int opcao;
     float saldo = 1000.0;
@@ -44,7 +49,7 @@ int main (){
         saldo = realizarDeposito(saldo);
         break;
         case 0:
-        printf("Saindo...\n");
+        sair()
         break;
         default:
         printf("Opcao Invalida!\n");
