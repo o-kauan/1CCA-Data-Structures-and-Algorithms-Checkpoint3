@@ -38,6 +38,8 @@ float realizarSaque(float saldo) {
         saldo -= valor;
         printf("Saque realizado com sucesso!\n");
         printf("Saldo atual: %.2f\n", saldo);
+        scanf("%f", &valor);
+        printf("Processando saque...\n");
     }
     return saldo;
 }
