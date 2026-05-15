@@ -22,7 +22,6 @@ void consultar_saldo(float saldo){
 void sair(){
     printf("=======================\nSAINDO\n=======================\n");
     printf("volte sempre!");
-    return 0;
 }
 float realizarSaque(float saldo) {
     float valor;
@@ -73,7 +72,7 @@ int main (){
 
         switch(opcao) {
         case 1:
-        consularSaldo(saldo);
+        consultar_saldo(saldo);
         break;
         case 2:
         saldo = realizarSaque(saldo);
@@ -82,7 +81,7 @@ int main (){
         saldo = realizarDeposito(saldo);
         break;
         case 0:
-        sair()
+        sair();
         break;
         default:
         printf("Opcao Invalida!\n");
